@@ -13,11 +13,18 @@ Este projeto foi criado utilizando React com Next.js, usando TypeScript para tip
 
 
 # 📦 Como usar 
-# 🔧 Pré-requisitos
 
-# Node.js instalado (Download aqui) ## npm, yarn ou pnpm para gerenciar pacotes ## 🏁 Passos para rodar
 
- Clone o repositório:
+🔧 Pré-requisitos
+
+Node.js instalado (Download aqui) ## npm, yarn ou pnpm para gerenciar pacotes 
+
+
+
+# 🏁 Passos para rodar
+
+
+Clone o repositório:
 
 git clone <URL-do-repositório>
 cd <nome-do-diretório>
@@ -27,22 +34,31 @@ cd <nome-do-diretório>
 
 Get-ExecutionPolicy
 
+
 Set-ExecutionPolicy RemoteSigned
+
 
 # Instale as dependências do projeto:
 
 npm install
 ou
+
 yarn
+
 ou
+
 pnpm install
 
 # Execute o servidor de desenvolvimento:
 
-npm run dev
- ou
+npm run dev 
+
+ou
+
 yarn dev
+
  ou
+ 
 pnpm dev
 
 # Abra o navegador e acesse: http://localhost:3000
