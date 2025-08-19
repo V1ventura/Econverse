@@ -1,0 +1,22 @@
+.container {
+  width: 1250px;
+  height: 288px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3019B2;
+  margin-bottom: 30px;
+}
+
+.circlesWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}

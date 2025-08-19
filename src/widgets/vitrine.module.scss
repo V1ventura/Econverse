@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 50px 0;
+  position: relative;
+}
+
+.seta {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.vitrineWrapper {
+  overflow: hidden;
+  width: 1270px;
+  padding-left: 0; 
+}
+
+.vitrine {
+  display: flex;
+  scroll-behavior: smooth;
+  justify-content: flex-start;
+  overflow-x: scroll;  // aqui permite o scroll horizontal
+  scrollbar-width: none; // Firefox - esconde scrollbar
+  -ms-overflow-style: none;  // IE e Edge - esconde scrollbar
+}
+.vitrine::-webkit-scrollbar {
+  display: none;  // Chrome, Safari e Opera - esconde scrollbar
+}
+
+.produtoCard {
+  min-width: 300px;
+  max-width: 300px;
+  margin: 0 10px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  text-align: left;
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 2px 0;
+  }
+}
+
+.descricao {
+  color: #555;
+  font-size: 15px;
+}
+
+.precoAntigo {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 16px !important;
+}
+
+.precoAtual {
+  font-size: 20px !important;
+  font-weight: bold;
+  color: #000;
+}
+
+.frete {
+  color: #3442B5;
+  font-weight: regular;
+}
+
+.botaoComprar {
+  background-color: #3442B5;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  padding: 10px 16px;
+  margin-top: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+
+  &:hover {
+    background-color: #4855e2;
+  }
+}

@@ -1,0 +1,108 @@
+.newsletter {
+  background-color: #1e1b4b;
+  padding: 40px 60px;
+  width: 100vw;
+  margin: 0;
+  color: white;
+  box-sizing: border-box;
+  min-height: 162px;
+
+  .newsletter-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .newsletter-text {
+    flex: 1 1 400px;
+    white-space: nowrap;
+
+    h1 {
+      font-size: 32px;
+      font-weight: 900;
+      margin-bottom: 8px;
+      margin-right: 20px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      margin: 0;
+      white-space: normal;
+    }
+  }
+
+  // NOVO CONTAINER que envolve o form + termos
+  .newsletter-right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; // Espaço entre o form e o termo
+    align-items: flex-end;
+  }
+
+  .newsletter-form {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    align-items: center;
+
+    input[type='text'],
+    input[type='email'] {
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px #E7E7E7;
+      font-size: 14px;
+      flex: 1 1 auto;
+      width: 233px;
+      height: 42px;
+      background-color: white;
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #efc403;
+      color: #000;
+      font-weight: 700;
+      border: none;
+      padding: 10px 20px;
+      width: 157px;
+      height: 42px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      flex-shrink: 0;
+
+      &:hover {
+    background-color: #f9cf24;
+  }
+    }
+  }
+
+  .newsletter-terms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 170px;
+    margin-top: -20px;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 400;
+
+    input[type='checkbox'] {
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+
+    label {
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+
+
+import React from "react";
+
+const IconCard5 = () => {
+  return (
+   <div className="flex flex-col items-center cursor-pointer group">
+  <div className="w-[128px] h-[128px] bg-[#F4F4F4] rounded-md shadow-md flex items-center justify-center hover:bg-[#F4F4F4] transition-colors duration-300">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-[61px] h-[61px] text-#000000 group-hover:text-[#3019B2] transition-colors duration-300"
+      viewBox="0 0 62 61"
+      preserveAspectRatio="xMidYMid meet"
+      fill="currentColor"
+    >
+      <g transform="translate(0.000000,61.000000) scale(0.100000,-0.100000)" stroke="none">
+        <path d="M269 595 c-63 -34 -56 -126 14 -202 50 -54 91 -77 124 -68 33 8 118
+        88 133 125 21 52 5 55 -21 4 -25 -51 -96 -114 -129 -114 -51 0 -150 116 -150
+        176 0 63 80 96 127 52 l23 -21 24 22 c36 33 84 26 113 -18 13 -19 23 -27 23
+        -18 0 29 -12 48 -41 62 -36 19 -69 19 -96 0 -19 -13 -24 -13 -50 0 -35 18 -60
+        18 -94 0z"/>
+        <path d="M468 234 c-32 -45 -33 -46 -36 -20 -4 35 -27 45 -115 52 -70 6 -77 5
+        -109 -19 -22 -17 -38 -23 -44 -17 -11 11 -112 -52 -120 -75 -5 -13 75 -137 98
+        -151 14 -9 115 63 121 86 3 14 17 21 46 26 23 4 41 11 41 16 0 6 -10 8 -22 5
+        -86 -20 -82 -21 -116 26 l-32 45 39 25 c39 26 41 26 113 14 55 -9 74 -16 76
+        -29 3 -15 -4 -18 -37 -18 -64 0 -48 -17 22 -23 58 -6 65 -4 106 24 42 29 76
+        33 66 7 -9 -24 -99 -72 -145 -79 l-45 -6 51 -2 c44 -1 60 4 100 32 57 39 65
+        65 31 101 -34 37 -51 33 -89 -20z m62 18 c0 -5 -14 -19 -31 -31 -31 -23 -31
+        -14 -1 22 16 18 32 23 32 9z m-327 -105 c28 -40 37 -61 30 -68 -7 -7 -25 10
+        -57 56 -51 73 -53 78 -30 73 9 -2 34 -29 57 -61z m-45 -17 c23 -32 42 -64 42
+        -69 0 -17 -51 -46 -58 -34 -4 5 -25 35 -46 66 l-39 56 24 20 c13 11 26 20 30
+        21 3 0 24 -27 47 -60z"/>
+      </g>
+    </svg>
+  </div>
+  <span className="mt-4 text-sm font-semibold text-black group-hover:text-[#3019B2]">
+    Saúde
+  </span>
+</div>
+  );
+};
+
+export default IconCard5;

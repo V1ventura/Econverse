@@ -1,0 +1,15 @@
+.circle {
+  width: 211px;
+  height: 211px;
+  border-radius: 105.5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 100px; // ajuste conforme necessário
+  height: auto;
+}
