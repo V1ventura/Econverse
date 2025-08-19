@@ -24,12 +24,12 @@
   display: flex;
   scroll-behavior: smooth;
   justify-content: flex-start;
-  overflow-x: scroll;  // aqui permite o scroll horizontal
-  scrollbar-width: none; // Firefox - esconde scrollbar
-  -ms-overflow-style: none;  // IE e Edge - esconde scrollbar
+  overflow-x: scroll;  
+  scrollbar-width: none; 
+  -ms-overflow-style: none;  
 }
 .vitrine::-webkit-scrollbar {
-  display: none;  // Chrome, Safari e Opera - esconde scrollbar
+  display: none;  
 }
 
 .produtoCard {
@@ -42,6 +42,13 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
   text-align: left;
+  transition: transform 0.25s ease;
+
+    &:hover {
+    transform: scale(1.03);
+    z-index: 10; 
+  }
+
 
   img {
     width: 100%;

@@ -15,7 +15,8 @@ import React, { useEffect, useState } from 'react';
 import Vitrines from '@/widgets/vitrine';
 import Logo from "./imagens/logo.png";
 import ProductModal from "@/components/produtomodal/productmodal";
-import type { Produto } from '@/types/produtos'; // Corrija esse import! Nunca use de `.next`
+import type { Produto } from "@/types/produtos";
+import Link from 'next/link';
 
 export default function Home() {
   const [selectedProduct, setSelectedProduct] = useState<Produto | null>(null);
@@ -38,71 +39,123 @@ export default function Home() {
       <hr className="border-t border-[1px] border-[#F0F0F0] w-[1280px] mx-auto" />
 
       <div className="container py-6 flex justify-between items-center mx-auto">
-  {/* Logo */}
-  <div className="flex-shrink-0">
-    <a href="./app/page">
-    <img src="/imagens/Logo.png" alt="logo" width={142} /></a>
-  </div>
 
-       {/* Barra de pesquisa */}
-<div className="flex items-center bg-[#F6F5F2] rounded-[10px]" style={{ width: '630px', height: '48px' }}>
-  <input
-    type="search"
-    placeholder="O que você está buscando?"
-    className="flex-grow bg-transparent text-gray-700 px-4 py-2 focus:outline-none"
-    style={{ height: '48px' }}
-  />
-  <img src="/imagens/lupa.png" alt="Lupa" className="w-6 h-6 mr-4" />
-</div>
+      {/* Logo */}
+    <div className="flex-shrink-0">
+      <a href="./app/page">
+        <img src="/imagens/Logo.png" alt="Logo da empresa" width={142} />
+      </a>
+    </div>
+    {/* Fim da Logo */}
 
-  {/* Ícones */}
+      {/* Barra de pesquisa */}
+      <div
+        className="flex items-center bg-[#F6F5F2] rounded-[10px]"
+        style={{ width: '630px', height: '48px' }}
+      >
+        <input
+          type="search"
+          placeholder="O que você está buscando?"
+          className="flex-grow bg-transparent text-gray-700 px-4 py-2 focus:outline-none"
+          style={{ height: '48px' }}
+          aria-label="Campo de busca"
+        />
+        <img
+          src="/imagens/lupa.png"
+          alt="Ícone de lupa para busca"
+          className="w-6 h-6 mr-4"
+        />
+      </div>
+      {/* Fim da Barra de pesquisa */}
+
+
+  {/* Acesso Rápido */}
+
+  <nav aria-label="Acesso rápido">
   <div className="flex gap-6">
-    <a href='/'>
-      <img src="/imagens/Vector.png" alt="Vector" /></a>
-    <a href='/'>
-      <img src="/imagens/Heart.png" alt="Heart" /></a>
-    <a href='/'>
-      <img src="/imagens/UserCircle.png" alt="User" /></a>
-    <a href='/'>
-      <img src="/imagens/ShoppingCart.png" alt="ShoppingCart" /></a>
-  </div>
+      <a href="/" title="Notificações">
+      <img src="/imagens/Vector.png" alt="Abrir notificaçõer" /></a>
+
+      <a href="/" title="Lista de desejos">
+      <img src="/imagens/Heart.png" alt="Lista de desejos" /></a>
+
+      <a href="/" title="Perfil do usuário">
+      <img src="/imagens/UserCircle.png" alt="Perfil do usuário" /></a>
+
+      <a href="/" title="Carrinho de compras">
+      <img src="/imagens/ShoppingCart.png" alt="Carrinho de compras" /></a>
+      </div>
+  </nav>
 </div>
 
+{/* Fim do Acesso Rápido */}
+
+     {/* Divisória */}
     <hr className="border-t border-[1px] border-[#F0F0F0] w-[1280px] mx-auto" />
+    {/* Fim da Divisória */}
 
-{/* Menu */}
-      <ul className="flex justify-center gap-10 border-b border-gray-200 py-4 text-sm font-semibold uppercase text-gray-400">
-  <li className="cursor-pointer hover:text-[#3019B2] transition">Todas Categorias</li>
-  <li className="cursor-pointer hover:text-[#3019B2] transition">Supermercado</li>
-  <li className="cursor-pointer hover:text-[#3019B2] transition">Livros</li>
-  <li className="cursor-pointer hover:text-[#3019B2] transition">Moda</li>
-  <li className="cursor-pointer hover:text-[#3019B2] transition">Lançamentos</li>
-  <li className="cursor-pointer hover:text-[#3019B2] transition ">Ofertas do dia</li>
-  <li className="flex items-center gap-1 cursor-pointer hover:text-[#3019B2] transition">
-    <img src="/imagens/coroa.png" alt="Coroa" className="w-4 h-4" />
-    Assinatura
-  </li>
-</ul>
+   
+    {/* Menu Principal */}
 
-{/* Background */}
+<nav aria-label="Menu principal">
+  <ul className="flex justify-center gap-10 border-b border-gray-200 py-4 text-sm font-semibold uppercase text-gray-400">
+    <li>
+      <a href="/todas-categorias" className="cursor-pointer hover:text-[#3019B2] transition">
+        Todas Categorias
+      </a>
+    </li>
+    <li>
+      <a href="/supermercado" className="cursor-pointer hover:text-[#3019B2] transition"> Supermercado</a>
+    </li>
+    <li>
+      <a href="/livros" className="cursor-pointer hover:text-[#3019B2] transition"> Livros </a>
+    </li>
+    <li>
+      <a href="/moda" className="cursor-pointer hover:text-[#3019B2] transition"> Moda </a>
+    </li>
+    <li>
+      <a href="/lancamentos" className="cursor-pointer hover:text-[#3019B2] transition">  Lançamentos</a>
+    </li>
+    <li>
+      <a href="/ofertas-do-dia" className="cursor-pointer hover:text-[#3019B2] transition"> Ofertas do dia </a>
+    </li>
+    <li>
+      <a href="/assinatura"
+        className="flex items-center gap-1 cursor-pointer hover:text-[#3019B2] transition"
+      >
+        <img src="/imagens/coroa.png" alt="Coroa" className="w-4 h-4" /> Assinatura </a>
+    </li>
+  </ul>
+</nav>
+  
+   {/* Fim do Menu Principal */}
+
+
+      {/* Background */}
   <div 
   className="w-full h-[390px] bg-cover bg-center"
   style={{ backgroundImage: "url('/imagens/blackfriday.png')" }}
 >
   {/* Conteúdo em cima da imagem */}
   <div className="flex flex-col justify-center h-full pl-16 text-white">
-    <h2 className="text-4xl font-bold leading-tight">
-      Venha conhecer nossas promoções
-    </h2>
-    <p className="mt-2 text-xl">
-      <span className="text-[#F7CA11] font-bold">50% Off</span> nos produtos
-    </p>
-    <button className="mt-4 w-[206px] h-[50px] bg-[#F7CA11] text-black font-semibold text-sm  rounded-[10px]">
-      Ver produto
-    </button>
+      <h2 className="text-4xl font-bold leading-tight">Venha conhecer nossas promoções </h2>
+    
+          <p className="mt-2 text-xl">
+            <span className="text-[#F7CA11] font-bold">50% Off</span> nos produtos
+          </p>
+
+    <Link
+  href="/produto-detalhe"
+  className="inline-block mt-4 w-[206px] h-[50px] bg-[#F7CA11] text-black font-semibold text-sm rounded-[10px] text-center leading-[50px]
+             hover:bg-#f4db78-400 transition-colors duration-300"
+>
+  Ver produto
+</Link>
+
   </div>
 </div>
 
+    {/* Fim do Background */}
 
 
 
@@ -115,51 +168,42 @@ export default function Home() {
       <IconCard />
     {/* Fim de Tecnologia */}
 
-
-  
-  {/* Supermercado */}
+    {/* Supermercado */}
     <div>
          <IconCard2 />
     </div>
-  {/* Fim de Supermercado */}
+    {/* Fim de Supermercado */}
 
-
-
-  {/* Bebidas */}
-
-    <div>
+    {/* Bebidas */}
+      <div>
       <IconCard3 />
     </div>
-  {/* Fim de Bebidas */}
+    {/* Fim de Bebidas */}
 
 
   {/* Ferramentas */}
-
-    <div>
+     <div>
       <IconCard4 />
     </div>
   {/* Fim de Ferramentas */}
 
   {/* Saúde */}
-    
     <div>
       <IconCard5 />
     </div>
-
   {/* Fim de Saúde */}
-
-
 
   {/* Esportes */}
     <div>
       <IconCard6 />
     </div>
+  {/* Fim de Esportes */}
 
   {/* Moda */}
-
-      <div>
+     <div>
       <IconCard7 />
     </div>
+  {/* Fim de Moda */}
 
 </div>
 

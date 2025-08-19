@@ -66,6 +66,17 @@ const Vitrines = ({ onProductClick }: VitrinesProps) => {
               <Link href="/" className={styles.frete}>
                 Frete grátis
               </Link>
+
+              <button
+                className={styles.botaoComprar}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  alert(`Produto "${produto.productName}" adicionado ao carrinho!`);
+                  // Aqui você pode adicionar a lógica para o botão comprar
+                }}
+              >
+                COMPRAR
+              </button>
             </div>
           ))}
         </div>
