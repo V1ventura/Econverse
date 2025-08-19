@@ -12,12 +12,12 @@ Este projeto foi criado utilizando React com Next.js, usando TypeScript para tip
 ✨ Tailwind CSS
 
 
-# 📦 Como usar 
+# 📦 Como usar  (Pré-requisitos)
 
 
-🔧 Pré-requisitos
+Node.js instalado ((https://nodejs.org/en/download)) 
 
-Node.js instalado (Download aqui) ## npm, yarn ou pnpm para gerenciar pacotes 
+ npm, yarn ou pnpm para gerenciar pacotes 
 
 
 
