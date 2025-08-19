@@ -1,17 +1,17 @@
-🚀 Projeto React + TypeScript com Pré-processador Sass & Tailwind CSS
+##🚀 Projeto React + TypeScript com Pré-processador Sass & Tailwind CSS
 
 Este projeto foi criado utilizando React com Next.js, usando TypeScript para tipagem estática e Sass como pré-processador CSS, junto com Tailwind CSS para estilização rápida e responsiva.
 
 O projeto foi iniciado com create-next-app
  e tem como foco criar uma aplicação moderna, escalável e fácil de manter.
 
-📖 Descrição do Projeto
+##📖 Descrição do Projeto
 
 Este é um projeto front-end que combina poderosas ferramentas de desenvolvimento para criar interfaces responsivas, acessíveis e de alta performance. Com um código organizado e modular, o projeto facilita a manutenção e o crescimento.
 
 Além disso, utiliza técnicas modernas como renderização do lado do servidor (SSR) do Next.js e o uso de hooks do React para melhor experiência do usuário.
 
-🚀 Funcionalidades principais
+##🚀 Funcionalidades principais
 
 🛍️ Exibição dinâmica de produtos com imagens e preços
 
@@ -27,7 +27,7 @@ Além disso, utiliza técnicas modernas como renderização do lado do servidor 
 
 💅 Estilização com Tailwind CSS e Sass para flexibilidade visual
 
-🎯 Objetivos do Projeto
+##🎯 Objetivos do Projeto
 
 Nosso objetivo é desenvolver uma aplicação front-end moderna e performática que sirva como base para futuros projetos de e-commerce ou portfólios, aplicando boas práticas de React, Next.js e CSS moderno.
 
@@ -43,7 +43,7 @@ Queremos garantir:
 
 🔒 Segurança com tipagem forte via TypeScript
 
-🛠️ Tecnologias utilizadas
+##🛠️ Tecnologias utilizadas
 
 ⚛️ React
 
@@ -59,7 +59,7 @@ Queremos garantir:
 
 🔄 Git para controle de versão
 
-📦 Como rodar o projeto localmente
+##📦 Como rodar o projeto localmente
 🔧 Pré-requisitos
 
 Node.js instalado (Download aqui
@@ -67,7 +67,7 @@ Node.js instalado (Download aqui
 
 npm, yarn ou pnpm para gerenciar pacotes
 
-🏁 Passos para rodar
+##🏁 Passos para rodar
 
 Clone o repositório:
 
@@ -75,13 +75,13 @@ git clone <URL-do-repositório>
 cd <nome-do-diretório>
 
 
-Caso esteja no Windows, ajuste a política de execução do PowerShell (requer permissão de administrador):
+##Caso esteja no Windows, ajuste a política de execução do PowerShell (requer permissão de administrador):
 
 Get-ExecutionPolicy
 Set-ExecutionPolicy RemoteSigned
 
 
-Instale as dependências do projeto:
+##Instale as dependências do projeto:
 
 npm install
 # ou
@@ -90,7 +90,7 @@ yarn
 pnpm install
 
 
-Execute o servidor de desenvolvimento:
+##Execute o servidor de desenvolvimento:
 
 npm run dev
 # ou
@@ -99,7 +99,7 @@ yarn dev
 pnpm dev
 
 
-Abra o navegador e acesse: http://localhost:3000
+##Abra o navegador e acesse: http://localhost:3000
 
 📝 Estrutura do Projeto
 ├── public/             # Arquivos estáticos (imagens, fontes, etc)
@@ -112,10 +112,10 @@ Abra o navegador e acesse: http://localhost:3000
 ├── package.json        # Dependências e scripts npm
 └── tsconfig.json       # Configuração TypeScript
 
-🤝 Contribuição
+##🤝 Contribuição
 
 Contribuições são muito bem-vindas! Sinta-se à vontade para abrir issues ou pull requests para sugerir melhorias ou corrigir bugs.
 
-📄 Licença
+##📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
